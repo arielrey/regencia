@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link href="../css/styles.css">
   <link rel="shortcout icon" href="../img/logoesc.jpg">
-  <title>Mis horarios</title>
+  <title>Ver horarios</title>
+
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -23,7 +37,7 @@
       </div>
       <div class="nav p-3 justify-content-end text-end">
         <a href="inicio_regencia.html" class="nav-link active" aria-current="page">Inicio</a>
-        <a href="ver_horarios.html" class="nav-link active" aria-current="page">Ver horarios</a>
+        <a href="ver_horarios.php" class="nav-link active" aria-current="page">Ver horarios</a>
         <button class="nav-link active" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
           aria-controls="offcanvasWithBothOptions">Profesores</button>
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
@@ -47,12 +61,9 @@
           </div>
         </div>
 
-        <a href="../login/login.html" class="justify-content-center text-center"><button type="button"
-            class="btn btn-danger">Salir</button></a>
+        <a href="../login/login.html" class="justify-content-center text-center"><button type="button" class="btn btn-danger">Salir</button></a>
       </div>
     </nav><br><br>
-
-    <!--Logo-->
 
     <div class="col text-center" class="flex-col logo">
       <a href="inicio_profesores.html">
@@ -60,21 +71,17 @@
     </div>
     <div class="text-center">
       <p>
-      <h1 class="display-4"> Mis Horarios </h1>
-      </p><br>
+      <h1 class="display-4">Ver Horarios</h1>
+      <br> <br>
+      <h3>Seleccione los días y horarios disponibles de profesores que desee ver</h3>
+      </p>
     </div>
   </div>
 
-  <form action="" method="post">
-
-  </form>
-
+  
   <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
-
 
 <footer id="" class="conteiner-fluid py-4 bg-dark text-white-50">
   <div class="d-flex flex-column">
@@ -93,9 +100,8 @@
     <div class="col-6 col-lg-2 offset-lg-1 mb-3">
       <h5>Guides</h5>
       <ul class="list-unstyled">
-        <li class="mb-2"><a href="inicio_profesores.html" class="nav-link active">Inicio</a></li>
-        <li class="mb-2"><a href="crear_horario.php" class="nav-link active">Cargar horario</a></li>
-        <li class="mb-2"><a href="mis_horarios.html" class="nav-link active">Mis horarios</a></li>
+        <li class="mb-2"><a href="inicio_regencia.html" class="nav-link active">Inicio</a></li>
+        <li class="mb-2"><a href="ver_horarios.php" class="nav-link active">Administrar horarios</a></li>
       </ul>
     </div>
     <div class="col-6 col-lg-2 mb-3">
@@ -115,5 +121,7 @@
     <small>Copyright 2023 &copy</small>
   </div>
 </footer>
+
+</html>
 
 </html>
