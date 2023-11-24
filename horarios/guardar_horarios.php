@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Conecta a la base de datos
     $servername = "localhost";
     $username = "root";
-    $password = "poshosql1";
+    $password = "";
     $database = "pp2-final";
     $conn = new mysqli($servername, $username, $password, $database);
     if ($conn->connect_error) {

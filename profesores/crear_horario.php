@@ -91,7 +91,7 @@
         // bloques horarios de la base de datos
         $servername = "localhost";
         $username = "root";
-        $password = "44602955";
+        $password = "";
         $database = "pp2-final";
         $conn = new mysqli($servername, $username, $password, $database);
         if ($conn->connect_error) {
