@@ -65,9 +65,22 @@
     </div>
   </div>
 
-  <form action="" method="post">
+  <p><h5 class="text-center">Por seguridad, ingrese su DNI y contraseña para ver sus horarios.</h5></p><br>
 
-  </form>
+  <form class="row g-3 justify-content-center" method="post" action="mis_horarios.php" style="margin-bottom: 10%;">
+    <div class="col-auto">
+        <label for="inputDNI" class="visually-hidden">DNI</label>
+        <input type="text" class="form-control" id="inputDNI" placeholder="DNI" name="dni">
+    </div>
+    <div class="col-auto">
+        <label for="inputPassword2" class="visually-hidden">Contraseña</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="Contraseña">
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Ver mis horarios</button>
+    </div><br><br>
+    <a href="inicio_profesores.html" class="justify-content-center text-center" style="margin-top: 5%;"><button type="button" class="btn btn-danger">Volver atrás</button></a>
+    </form>
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
