@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="../css/styles.css">
+    <link rel="shortcut icon" href="../img/logoesc.jpg">
+    <title>Registro</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+    <div class="container-fluid vh-70 d-flex flex-column">
+        <div class="row flex-grow-1">
+            <div class="col-12 col-md-6 p-0">
+                <div id="carouselExampleControls" class="carousel slide w-90 h-70" data-bs-ride="carousel">
+                    <div class="carousel-inner w-90 h-100">
+                        <div class="carousel-item active w-90 h-50">
+                            <img src="../img/logoAF.jpg" class="d-block w-100 h-90 object-fit-contain" alt="AF"
+                                height="900">
+                        </div>
+                        <div class="carousel-item h-50">
+                            <img src="../img/logoDs.jpg" class="d-block w-100 h-90 object-fit-contain" alt="DS"
+                                height="900">
+                        </div>
+                        <div class="carousel-item h-50">
+                            <img src="../img/logoITI.jpg" class="d-block w-100 h-90 object-fit-contain" alt="ITI"
+                                height="900">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex h-90 justify-content-center align-items-center bg-light">
+                <div class="box-text d-flex align-items-center flex-column">
+                    <img width="45%" src="../img/esc.jpg" alt="" srcset="">
+                    <h1>Registro de Usuario</h1>
+                    <br><br>
+                    <div class="login-register">
+                        <form id="formulario" method="POST" action="registro.php">
+                            <div class="form-group form-login">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control mb-3" id="nombre" name="nombre"
+                                            placeholder="Ingrese su nombre" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control mb-3" id="apellido" name="apellido"
+                                            placeholder="Ingrese su apellido" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <input type="dni" class="form-control mb-3" id="dni" name="dni"
+                                            placeholder="Ingrese su DNI" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control mb-3" id="emailHelp" name="email"
+                                            placeholder="Ingrese su email" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control mb-3" id="usuario" name="usuario"
+                                            placeholder="Ingrese su usuario" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="tel" class="form-control mb-3" id="telefono" name="telefono"
+                                            placeholder="Ingrese su telefono" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="password" class="form-control mb-3" id="contrasenia"
+                                            name="contrasenia" placeholder="Ingrese su contraseña" required
+                                            minlength="8">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <select class="form-select" aria-label="roles" id="roles" name="roles[]">
+                                            <option value="1">Regente</option>
+                                            <option value="2">Profesor</option>
+                                            <option value="3">Ambos</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-12 mb-2" style="margin-left: 35%;">
+                                        <button type="submit" class="btn btn-primary"
+                                            id="btn-enviar">Registrarme</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <br>
+                        <span class="session mt-2">Ya tenes una cuenta? <strong><a href="login.html">Iniciar
+                                    Sesion</a></strong>.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script SRC="../JavaScript/validarlogin.js"></script>
+</body>
+
+</html>

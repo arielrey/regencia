@@ -1,0 +1,547 @@
+p {
+    font-family: Arial;
+
+}
+
+#p1,
+#Encabezado {
+    font-family: Arial;
+    text-align: center;
+}
+
+#cabecera {
+    background-color: #fcfbfb;
+    /* Cambia el color de fondo */
+    padding: 0;
+    /* Añade un relleno interno */
+    border: 2px solid #000;
+    /* Agrega un borde */
+    margin: 0 auto;
+    /* Establece márgenes alrededor del elemento */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    font-size: 16px;
+    /* Cambia el tamaño de fuente */
+    color: #333;
+}
+
+#grilla1 {
+    background-color: #fcfbfb;
+    /* Cambia el color de fondo */
+    padding: 10px;
+    /* Añade un relleno interno */
+    border: 1px solid #000;
+    /* Agrega un borde */
+    /* width: 2cm; */
+    margin: 0 auto;
+    /* Establece márgenes alrededor del elemento */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    font-size: 16px;
+    /* Cambia el tamaño de fuente */
+    color: #333;
+
+}
+
+/* #grilla1.item:hover { */
+/* background-color: #0edb1f; Cambia el color de fondo al seleccionar */
+/* color: black; Cambia el color del texto al seleccionar */
+/* Otros estilos al seleccionar aquí */
+/* } */
+
+
+.grilla-cell {
+    background-color: white;
+    padding: 10px;
+    /* Añade un relleno interno */
+    /* border: 1px solid #000; Agrega un borde */
+    /* width: 2cm; */
+    margin: 0 auto;
+    /* Establece márgenes alrededor del elemento */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    font-size: 16px;
+    /* Cambia el tamaño de fuente */
+    color: #333;
+    cursor: pointer;
+    /* Cambia el cursor a una mano al pasar sobre la celda */
+}
+
+/* Estilo cuando se selecciona la celda */
+.celda-seleccionada {
+    background-color: #2b7306;
+    /* Cambia el color de fondo al seleccionar */
+    padding: 10px;
+    /* Añade un relleno interno */
+    /* border: 1px solid #000; Agrega un borde */
+    width: 3cm;
+    margin: 0 auto;
+    /* Establece márgenes alrededor del elemento */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    font-size: 16px;
+    /* Cambia el tamaño de fuente */
+    color: #333;
+    /* Otros estilos al seleccionar aquí */
+}
+
+#columna1 {
+    background-color: #ea5b09;
+    /* Cambia el color de fondo */
+    padding: 10px;
+    /* Añade un relleno interno */
+    border: 1px solid #000;
+    /* Agrega un borde */
+    /* width: 80%; */
+    margin: 0 auto;
+    /* Establece márgenes alrededor del elemento */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    font-size: 16px;
+    /* Cambia el tamaño de fuente */
+    color: #333;
+}
+
+/* .puedo {
+    background-color: lightblue; /* Cambia el color de fondo para "Puedo" */
+/* color: black; Cambia el color del texto para "Puedo" */
+/* } */
+
+/* Estilo para la opción "No puedo" */
+/* .no-puedo { */
+/* background-color: red; Cambia el color de fondo para "No puedo" */
+/* color: white; Cambia el color del texto para "No puedo" */
+/* }  */
+
+/* ESTO ES EL LOGIN (DE ACA PARA ABAJO) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+:root {
+    --colorPrimary: #262261;
+    --hoverColorPrimary: #262261b8;
+    --colorSencodary: #00adee;
+    --hoverColorSencodary: #00aeeebb;
+}
+
+.box-text h1 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--colorPrimary);
+    text-align: center;
+}
+
+.box-text p {
+    font-weight: 600;
+    color: var(--colorPrimary);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.login-register {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.login-register button {
+    width: 100%;
+}
+
+.btn-login {
+    background-color: var(--colorPrimary);
+    color: white;
+    font-weight: 700;
+}
+
+.btn-login:hover {
+    background-color: var(--hoverColorPrimary);
+    transition: 0.5s;
+    color: white;
+}
+
+.btn-register {
+    background-color: var(--colorSencodary);
+    color: white;
+    font-weight: 700;
+}
+
+.btn-register:hover {
+    background-color: var(--hoverColorSencodary);
+    transition: 0.5s;
+    color: white;
+}
+
+
+.login-register {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.alert-register {
+    color: #262261;
+    font-weight: 300;
+}
+
+.login-register p {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: left;
+    color: #3f3c3c;
+}
+
+.login-register strong>a {
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: left;
+    color: #1730d2;
+    transition: 0.5s;
+}
+
+.login-register strong>a:hover {
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: left;
+    transition: 0.5s;
+    color: #435af0ce;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-login button {
+    background-color: var(--colorPrimary);
+    color: #ffff;
+    font-weight: 700;
+    border: none;
+}
+
+.form-login button:hover {
+    background-color: #262261d8;
+    color: #ffff;
+    border: none;
+    font-weight: 700;
+}
+
+
+.box-text h1 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--colorPrimary);
+    text-align: center;
+}
+
+.box-text p {
+    font-weight: 600;
+    color: var(--colorPrimary);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.login-register {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.login-register button {
+    width: 100%;
+}
+
+.btn-login {
+    background-color: var(--colorPrimary);
+    color: white;
+    font-weight: 700;
+}
+
+.btn-login:hover {
+    background-color: #262261d7;
+    transition: 0.5s;
+    color: white;
+}
+
+.btn-register {
+    background-color: var(--colorSencodary);
+    color: white;
+    font-weight: 700;
+}
+
+.btn-register:hover {
+    background-color: #00aeee70;
+    transition: 0.5s;
+    color: white;
+}
+
+.alert-register {
+    color: #262261;
+    font-weight: 300;
+}
+
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-register button {
+    background-color: var(--colorSencodary);
+    color: #ffff;
+    border: none;
+    font-weight: 700;
+}
+
+.form-register button:hover {
+    background-color: #00aeeeb4;
+    color: #ffff;
+    border: none;
+    font-weight: 700;
+}
+
+
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-style button {
+    width: 100%;
+}
+
+.selected-options {
+    width: 100%;
+}
+
+.grup-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.style-box2 h5 {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+    #map {
+        height: 50vh;
+        width: 100%;
+    }
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal-show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal_container {
+    margin: auto;
+    width: 90%;
+    background-color: #fff;
+    max-width: 600px;
+    max-height: 20%;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.modal_title {
+    font-size: 2.5rem;
+}
+
+.modal_paragraph {
+    margin-bottom: 10px;
+}
+
+.modal_close {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f26250;
+    padding: 0.5em 2em;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal_close:hover {
+
+    color: #f26250;
+    background-color: #fff;
+}
+
+/***************************/
+.box-text h1 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--colorPrimary);
+    text-align: center;
+}
+
+.box-text p {
+    font-weight: 600;
+    color: var(--colorPrimary);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.login-register {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.login-register button {
+    width: 100%;
+}
+
+.btn-login {
+    background-color: var(--colorPrimary);
+    color: white;
+    font-weight: 700;
+}
+
+.btn-login:hover {
+    background-color: #262261d7;
+    transition: 0.5s;
+    color: white;
+}
+
+.btn-register {
+    background-color: var(--colorSencodary);
+    color: white;
+    font-weight: 700;
+}
+
+.btn-register:hover {
+    background-color: #00aeee70;
+    transition: 0.5s;
+    color: white;
+}
+
+.alert-register {
+    color: #262261;
+    font-weight: 300;
+}
+
+.login-register p {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: left;
+    color: #3f3c3c;
+}
+
+.login-register strong>a {
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: left;
+    color: #1730d2;
+    transition: 0.5s;
+}
+
+.login-register strong>a:hover {
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: left;
+    transition: 0.5s;
+    color: #435af0ce;
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-register button {
+    background-color: var(--colorPrimary);
+    color: #ffff;
+    border: none;
+    font-weight: 700;
+}
+
+.form-register button:hover {
+    background-color: #262261d7;
+    color: #ffff;
+    border: none;
+    font-weight: 700;
+}
+
+.divEscuela {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.divEscuela button {
+    background-color: var(--colorSencodary);
+    color: #ffff;
+    border: none;
+    font-weight: 700;
+}
+
+.divEscuela button:hover {
+    background-color: #00aeeedb;
+    color: #ffff;
+    border: none;
+    font-weight: 700;
+}

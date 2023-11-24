@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="../css/styles.css">
+  <link rel="shortcout icon" href="../img/logoesc.jpg">
+  <title>Inicio</title>
+</head>
+
+<body style="background-color: rgb(224, 224, 224);">
+
+  <div class="conteiner-fluid">
+
+    <!-- MENU -->
+
+    <nav class="nav shadow-lg p-3 mb-5 bg-body-tertiary rounded justify-content-center">
+      <div class="conteiner-fluid text-start justify-content-start">
+        <img src="../img/logoesc.jpg" alt="" style="width: 30%; margin-top: 1%;">
+      </div>
+      <div class="nav p-3 justify-content-end text-end">
+        <a href="inicio_regencia.html" class="nav-link active" aria-current="page">Inicio</a>
+        <a href=".php" class="nav-link active">Mi cuenta</a>
+        <!-- Dropdown -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Tareas
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="h_form.html">
+                <p>Administrar de Horarios</p>
+              </a></li>
+            <li><a class="dropdown-item" href="...">
+                <p>Mesas de Examen</p>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav><br><br>
+
+    <!--Logo-->
+
+    <div class="text-center">
+      <p>
+      <h1 class="display-7">Administrar Horarios</h1>
+      </p><br>
+    </div>
+  </div>
+
+  <!-- Formulario -->
+  <form action="" method="">
+    <div class="container-fluid justify-content-center">
+
+      <br><br><br>
+
+      <!-- Solapas -->
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+            <h3 style="color: red" ;>ITI</h3>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+            <h3 style="color: rgb(0, 188, 0);">DS</h3>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+            type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+            <h3 style="color:blue;">AF</h3>
+          </button>
+        </li>
+      </ul>
+
+      <!-- CONTENIDO DE SOLAPAS POR CARRERA -->
+      <!-- ITI -->
+      <div class="tab-content justify-content-center text-center shadow-sm p-3 mb-5 bg-body-tertiary rounded"
+        id="myTabContent" style="background-color: white; margin-bottom: 10%;">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+          tabindex="0">
+          <h2>Técnico Superior en Infraestructura</h2><br>
+          <div class="accordion" id="iti-accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-iti-1">
+                <button class="accordion-button" type="button" style="background-color: rgb(255, 59, 59);color:white;"
+                  data-bs-toggle="collapse" data-bs-target="#collapse-iti-1" aria-expanded="true"
+                  aria-controls="collapse-iti-1">
+                  Materias 1erAño
+                </button>
+              </h2>
+              <div id="collapse-iti-1" class="accordion-collapse collapse show" aria-labelledby="heading-iti-1"
+                data-bs-parent="#iti-accordion">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">Comunicación - Taller - Cuatrimestral</li>
+                    <li class="list-group-item">UDI I - Materia - Cuatrimestral</li>
+                    <li class="list-group-item">Matemáticas - Materia - Anual</li>
+                    <li class="list-group-item">Física aplicada a las Tecnologías de la información - Taller - Anual
+                    </li>
+                    <li class="list-group-item">Administración - Materia - Anual</li>
+                    <li class="list-group-item">Inglés técnico I - Materia - Anual</li>
+                    <li class="list-group-item">Arquitectura de las computadoras - Taller - Anual</li>
+                    <li class="list-group-item">Lógica y programación - Materia - Anual</li>
+                    <li class="list-group-item">Infraestructura de Redes I - Taller - Anual</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-iti-2">
+                <button class="accordion-button" type="button" style="background-color: rgba(255, 59, 59);color:white;"
+                  data-bs-toggle="collapse" data-bs-target="#collapse-iti-2" aria-expanded="false"
+                  aria-controls="collapse-iti-2">
+                  Materias 2doAño
+                </button>
+              </h2>
+              <div id="collapse-iti-2" class="accordion-collapse collapse" aria-labelledby="heading-iti-2"
+                data-bs-parent="#iti-accordion">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">Problemática Socio contemporáneas - Materia - Cuatrimestral</li>
+                    <li class="list-group-item">UDI II - Materia - Cuatrimestral</li>
+                    <li class="list-group-item">Estadística - Materia - Anual</li>
+                    <li class="list-group-item">Innovación y Desarrollo emprendedor - Taller - Anual</li>
+                    <li class="list-group-item">Sistemas Operativos - Materia - Anual - Correlativa: Arq. de las
+                      computadoras</li>
+                    <li class="list-group-item">Algoritmos y Estructura de datos - Materia - Anual - Correlativa:
+                      Matematica, Logica y Programacion</li>
+                    <li class="list-group-item">Bases de datos - Taller - Anual - Correlativa: Logica y Programacion
+                    </li>
+                    <li class="list-group-item">Infraestructura de Redes II - Laboratorio - Anual - Correlativa:
+                      Infraestructura de Redes I</li>
+                    <li class="list-group-item">Practica Profesionalizante I - Proyecto - Anual</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-iti-3">
+                <button class="accordion-button" type="button" style="background-color: rgb(255, 59, 59);color:white;"
+                  data-bs-toggle="collapse" data-bs-target="#collapse-iti-3" aria-expanded="false"
+                  aria-controls="collapse-iti-3">
+                  Materias 3erAño
+                </button>
+              </h2>
+              <div id="collapse-iti-3" class="accordion-collapse collapse" aria-labelledby="heading-iti-3"
+                data-bs-parent="#iti-accordion">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">Ética y Responsabilidad Social - Materia - Cuatrimestral</li>
+                    <li class="list-group-item">Derecho y Legislación laboral - Materia - Cuatrimestral</li>
+                    <li class="list-group-item">Administración de Bases de datos - Materia - Anual - Correlativa: Base
+                      de Datos</li>
+                    <li class="list-group-item">Seguridad de los Sistemas - Materia - Anual - Correlativa: Sistemas
+                      Operativos</li>
+                    <li class="list-group-item">Integridad y Migración de Datos - Proyecto - Anual - Correlativa:
+                      Infraestructura de Redes II, Administración</li>
+                    <li class="list-group-item">Administración de Sistemas Operativos y Redes - Taller - Anual -
+                      Correlativas: Infraestructura de Redes II, Sistemas Operativos</li>
+                    <li class="list-group-item">Práctica Profesionalizante II - Proyecto - Anual - Correlativas:
+                      Practica Profesionalizante I, Innovación y Desarrollo emprendedor</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DS -->
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <h2>Técnico Superior en Desarrollo de Software </h2><br>
+          <div class="accordion" id="ds-accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-ds-1">
+                <button class="accordion-button" type="button"
+                  style="background-color: rgba(5, 144, 5, 0.568);color:white;" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-ds-1" aria-expanded="true" aria-controls="collapse-ds-1">
+                  Materias 1erAño
+                </button>
+              </h2>
+              <div id="collapse-ds-1" class="accordion-collapse collapse show" aria-labelledby="heading-ds-1"
+                data-bs-parent="#ds-accordion">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">Comunicación - Taller - Cuatrimestral</li>
+                    <li class="list-group-item">UDI I - Materia - Cuatrimestral</li>
+                    <li class="list-group-item">Matemáticas - Materia - Anual</li>
+                    <li class="list-group-item">Tecnología de la información - Materia</li>
+                    <li class="list-group-item">Administración - Materia</li>
+                    <li class="list-group-item">Inglés técnico I- Materia</li>
+                    <li class="list-group-item">Sistemas Operativos - Materia</li>
+                    <li class="list-group-item">Lógica y Estructura de Datos - Taller - Anual</li>
+                    <li class="list-group-item">Ingeniería de Software I - Materia - Anual</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-ds-2">
+                <button class="accordion-button" type="button"
+                  style="background-color: rgba(5, 144, 5, 0.568);color:white;" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-ds-2" aria-expanded="false" aria-controls="collapse-ds-2">
+                  Materias 2doAño
+                </button>
+              </h2>
+              <div id="collapse-ds-2" class="accordion-collapse collapse" aria-labelledby="heading-ds-2"
+                data-bs-parent="#ds-accordion">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">Problemáticas Socio Contemporáneas - Materia - Cuatrimestral</li>
+                    <li class="list-group-item">UDI II - Materia - Cuatrimestral</li>
+                    <li class="list-group-item">Estadísticas - Materia - Anual</li>
+                    <li class="list-group-item">Innovación y Desarrollo emprendedor - Taller - Anual</li>
+                    <li class="list-group-item">Ingles Técnico II - Materia - Anual - Correlativa: Ingles Técnico I</li>
+                    <li class="list-group-item">Programación I - Taller - Anual - Correlativa: Logica y Estructura de
+                      Datos</li>
+                    <li class="list-group-item">Bases de datos I - Materia - Anual</li>
+                    <li class="list-group-item">Ingeniería de Software II - Materia - Anual - Correlativa: Ingeniería de
+                      Software I, Tecnología de la informacion, Sistemas Operativos </li>
+                    <li class="list-group-item">Practica Profesionalizante I - Proyecto - Anual</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-ds-3">
+                <button class="accordion-button" type="button"
+                  style="background-color: rgba(5, 144, 5, 0.568);color:white;" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-ds-3" aria-expanded="false" aria-controls="collapse-ds-3">
+                  Materias 3erAño
+                </button>
+              </h2>
+              <div id="collapse-ds-3" class="accordion-collapse collapse" aria-labelledby="heading-ds-3"
+                data-bs-parent="#ds-accordion">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">Ética y Responsabilidad Social - Materia - Cuatrimestral
+                    </li>
+                    <li class="list-group-item">Derecho y Legislación laboral - Materia - Cuatrimestral
+                    </li>
+                    <li class="list-group-item">Base de datos II - Materia - Anual - Correlativa: Base de datos I,
+                      Sistemas Operativos, Ingeniería de Software</li>
+                    <li class="list-group-item">Redes y Comunicación - Laboratorio - Anual - Correlativa: Ingeniería de
+                      Software I, Tecnología de la informacion, Sistemas Operativos</li>
+                    <li class="list-group-item">Gestión de Proyectos Software - Materia - Anual - Correlativa: Base de
+                      datos I, Sistemas Operativos, Ingeniería de Software</li>
+                    <li class="list-group-item">Programación II - Taller - Anual - Correlativa: Programacion I </li>
+                    <li class="list-group-item">Práctica Profesionalizante II - Proyecto - Anual - Correlativa: Practica
+                      Profesionalizante I, Administración, Innovación y Desarrollo emprendedor</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AF -->
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+          <h2>Técnico Superior en Análisis Funcional de Sistemas Informaticos </h2><br>
+          <div class="accordion" id="af-accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-af-1">
+                <button class="accordion-button" type="button"
+                  style="background-color: rgba(42, 53, 212, 0.76); color:white;" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-af-1" aria-expanded="true" aria-controls="collapse-af-1">
+                  Materias 1erAño
+                </button>
+              </h2>
+              <div id="collapse-af-1" class="accordion-collapse collapse show" aria-labelledby="heading-af-1"
+                data-bs-parent="#af-accordion">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">Comunicación - Taller - Cuatrimestral</li>
+                    <li class="list-group-item">UDI I - Materia - Cuatrimestral</li>
+                    <li class="list-group-item">Matemática - Materia - Anual</li>
+                    <li class="list-group-item">Psicosociología de las organizaciones - Materia - Anual</li>
+                    <li class="list-group-item">Modelos de negocio - Taller - Anual</li>
+                    <li class="list-group-item">Inglés técnico I - Materia - Anual</li>
+                    <li class="list-group-item">Arquitectura de las computadoras - Taller - Anual</li>
+                    <li class="list-group-item">Gestión de Software I - Taller - Anual</li>
+                    <li class="list-group-item">Análisis de Sistemas Organizacionales - Taller - Anual</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-af-2">
+                <button class="accordion-button" type="button"
+                  style="background-color: rgba(42, 53, 212, 0.76);color:white;" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-af-2" aria-expanded="false" aria-controls="collapse-af-2">
+                  Materias 2doAño
+                </button>
+              </h2>
+              <div id="collapse-af-2" class="accordion-collapse collapse" aria-labelledby="heading-af-2"
+                data-bs-parent="#af-accordion">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">Problemática Socio contemporáneas - Materia - Anual</li>
+                    <li class="list-group-item">UDI II - Materia - Anual</li>
+                    <li class="list-group-item">Estadísticas - Materia - Anual</li>
+                    <li class="list-group-item">Innovación y Desarrollo emprendedor - Taller</li>
+                    <li class="list-group-item">Ingles Técnico II - Materia - Anual - Correlativa: Ingles Técnico I</li>
+                    <li class="list-group-item">Gestión de Software II - Materia - Anual - Correlativa: Gestión de
+                      Software I, Analisis de Sistemas Organizacionales</li>
+                    <li class="list-group-item">Estrategía de Negocios - Proyecto - Correlativa: Modelos de Negocios
+                    </li>
+                    <li class="list-group-item">Desarrollo de Sistemas - Taller - Correlativa: Gestión de Software I,
+                      Analisis de Sistemas Organizacionales</li>
+                    <li class="list-group-item">Practica Profesionalizante I - Proyecto</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-af-3">
+                <button class="accordion-button" type="button"
+                  style="background-color: rgba(42, 53, 212, 0.76);color:white;" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-af-3" aria-expanded="false" aria-controls="collapse-af-3">
+                  Materias 3erAño
+                </button>
+              </h2>
+              <div id="collapse-af-3" class="accordion-collapse collapse" aria-labelledby="heading-af-3"
+                data-bs-parent="#af-accordion">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">Ética y Responsabilidad Social - Materia - Cuatrimestral</li>
+                    <li class="list-group-item">Derecho y Legislación laboral - Materia - Cuatrimestral</li>
+                    <li class="list-group-item">Base de datos - Taller - Anual</li>
+                    <li class="list-group-item">Redes y Comunicación - Laboratorio - Anual</li>
+                    <li class="list-group-item">Seguridad de los Sistemas - Materia - Anual</li>
+                    <li class="list-group-item">Sistemas de Informacion Organizacional - Taller - Anual- Correlativa:
+                      Modelos de Negocios</li>
+                    <li class="list-group-item">Desarrollo de Sistemas Web - Taller - Anual - Correlativa: Desarrollo de
+                      Sistemas</li>
+                    <li class="list-group-item">Práctica Profesionalizante II - Proyecto - Anual - Correlativas:
+                      Práctica Profesionalizante I, Innovación y Desarrollo emprendedor </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+</body>
+<footer id="" class="conteiner-fluid py-4 bg-dark text-white-50">
+  <div class="d-flex flex-column">
+    <div id="page-content">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <h1 class="fw-light mt-4 text-white">Regencia Terciario Esc. Sup. N49 "J.J. de Urquiza"</h1><br>
+            <p class="lead text-white-50">Mas informacion</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+      <h5>Guides</h5>
+      <ul class="list-unstyled">
+        <li class="mb-2"><a href="inicio_regencia.html" class="nav-link active">Inicio</a></li>
+        <li class="mb-2"><a href="..." class="nav-link active">Mi cuenta</a></li>
+        <li class="mb-2"><a href="..." class="nav-link active">Administrar horarios</a></li>
+        <li class="mb-2"><a href="..." class="nav-link active">Crear mesas de examen</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-lg-2 mb-3">
+      <h5>Contacto</h5>
+      <ul class="list-unstyled">
+        <li class="mb-2">
+          <p>-------</p>
+        </li>
+        <li class="mb-2">
+          <p>-------</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container text-center">
+    <small>Copyright 2023 &copy</small>
+  </div>
+  </div>
+</footer>
+
+</html>
