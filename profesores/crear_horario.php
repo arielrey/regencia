@@ -70,9 +70,7 @@
     <div class="text-center">
       <p>
       <h1 class="display-4">Cargar Horarios</h1>
-      <br> <br>
-      <h3>Seleccione sus días y horarios disponibles</h3>
-      </p>
+      </p><br>
     </div>
   </div>
 
@@ -93,7 +91,7 @@
         // bloques horarios de la base de datos
         $servername = "localhost";
         $username = "root";
-        $password = "poshosql1";
+        $password = "44602955";
         $database = "pp2-final";
         $conn = new mysqli($servername, $username, $password, $database);
         if ($conn->connect_error) {
@@ -123,7 +121,8 @@
       <input class="form-control text-center" type="text" placeholder="Validar DNI" name="dni_docente" id="dni_docente" aria-label="Validar DNI">
     </div>
 
-    <button type="submit" class="btn btn-primary col-lg-2 conteiner-fluid" style="margin-left: 42%;margin-bottom: 10%;">Guardar Horarios</button>
+    <button type="submit" class="btn btn-success col-lg-2 conteiner-fluid" style="margin-left: 42%;margin-bottom: 2%;">Guardar Horarios</button>
+    <a href="inicio_profesores.html" class="justify-content-center text-center" style="margin-left: 47%;"><button type="button" class="btn btn-danger">Volver atrás</button></a>
   </form>
 
   <script>
@@ -147,8 +146,7 @@
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
-
+</body><br><br>
 <footer id="" class="conteiner-fluid py-4 bg-dark text-white-50">
   <div class="d-flex flex-column">
     <div id="page-content">
