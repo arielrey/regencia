@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = ""; //cambiar si es necesario
+$password = "poshosql1"; //cambiar si es necesario
 $database = "pp2-final";
 
 $conn = new mysqli($servername, $username, $password, $database);

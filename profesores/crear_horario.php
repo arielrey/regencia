@@ -70,7 +70,9 @@
     <div class="text-center">
       <p>
       <h1 class="display-4">Cargar Horarios</h1>
-      </p><br>
+      <br> <br>
+      <h3>Seleccione sus días y horarios disponibles</h3>
+      </p>
     </div>
   </div>
 
@@ -91,7 +93,7 @@
         // bloques horarios de la base de datos
         $servername = "localhost";
         $username = "root";
-        $password = "";
+        $password = "poshosql1";
         $database = "pp2-final";
         $conn = new mysqli($servername, $username, $password, $database);
         if ($conn->connect_error) {
@@ -153,7 +155,7 @@
       <div class="container text-center">
         <div class="row justify-content-center">
           <div class="col-md-7">
-            <h1 class="fw-light mt-4 text-white">Regencia Terciario Esc. Sup. N49 "J.J. de Urquiza"</h1><br>
+            <h1 class="fw-light mt-4 text-white">Profesores Terciario Esc. Sup. N49 "J.J. de Urquiza"</h1><br>
             <p class="lead text-white-50">Mas informacion</p>
           </div>
         </div>
