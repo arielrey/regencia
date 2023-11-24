@@ -70,15 +70,14 @@ if ($conn->connect_error) {
         </div>
         <div class="text-center">
             <p>
-            <h1 class="display-4"> Mis Horarios </h1>
+            <h1 class="display-4"> Mis Horarios disponibles</h1>
             </p><br>
         </div>
     </div>
     <?php
-    // Suponiendo que tienes una sesión o alguna manera de identificar al usuario, reemplaza USER_ID con el identificador real
     if (isset($_POST['dni'])) {
-        $dni = $_POST['dni']; // Obtener el DNI del formulario
-        $user_id = $dni; // Cambia esto según tu método de autenticación
+        $dni = $_POST['dni']; 
+        $user_id = $dni; 
 
         $sql = "SELECT dia, bloque_horario, disponibilidad FROM disponibilidad
             JOIN horario ON disponibilidad.bloque = horario.id_bloque
@@ -97,13 +96,25 @@ if ($conn->connect_error) {
                     </thead>
                     <tbody>";
 
-            // Imprimir datos de cada fila
-            while ($row = $result->fetch_assoc()) {
-                echo "<tr>
-                    <th scope='row'>{$row['dia']}</th>
+ 
+        $dias = array(
+        1 => 'Lunes',
+        2 => 'Martes',
+        3 => 'Miércoles',
+        4 => 'Jueves',
+        5 => 'Viernes',
+        );
+
+    // Imprimir datos de cada fila
+        while ($row = $result->fetch_assoc()) {
+        $numeroDia = $row['dia'];
+        $nombreDia = isset($dias[$numeroDia]) ? $dias[$numeroDia] : 'Desconocido';
+
+            echo "<tr>
+                    <th scope='row'>{$nombreDia}</th>
                     <td>{$row['bloque_horario']}</td>
                 </tr>";
-            }
+        }
 
             echo "</tbody></table></div>";
         } else {
@@ -115,55 +126,11 @@ if ($conn->connect_error) {
 
     $conn->close(); ?>
 
-    <!-- Bootstrap -->
-    <br><br>
-    <button class="btn btn-primary" style="margin-left: 30%;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Info</button>
-
-    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-        <div class="offcanvas-header text-center">
-            <h4 class="offcanvas-title" id="offcanvasBottomLabel"> Nota: </h4>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body small">
-
-            <div class="justify-content-center text-center">
-                <p>
-                <h5>Los días están representados por números</h5>
-                </p><br>
-            </div>
-            <table class="table justify-content-center text-center">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Día semanal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Lunes</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Martes</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Miercoles</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Jueves</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Viernes</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+<!-- Bootstrap -->
+    <br>
+    <div class="d-flex justify-content-center text-center">
+        <a href="mis_horarios.html" class="btn btn-danger">Volver atrás</a>
     </div>
-    <a href="mis_horarios.html" class="justify-content-center text-center"><button type="button" class="btn btn-danger">Volver atrás</button></a>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
